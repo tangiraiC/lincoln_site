@@ -9,28 +9,27 @@ const imageIndices = {
   resume: ref(0)
 };
 
-// Project images
+// Project images with base URL
 const projectImages = {
   poverty: [
-    './project-images/poverty-alleviation/1.png',
-    './project-images/poverty-alleviation/2.png',
-    './project-images/poverty-alleviation/3.png'
+    import.meta.env.BASE_URL + 'project-images/poverty-alleviation/1.png',
+    import.meta.env.BASE_URL + 'project-images/poverty-alleviation/2.png',
+    import.meta.env.BASE_URL + 'project-images/poverty-alleviation/3.png'
   ],
   fifa: [
-    './project-images/Analysis-of-Factors-Influencing-Finishing-Ability-in-Soccer-Players/1.png',
-    './project-images/Analysis-of-Factors-Influencing-Finishing-Ability-in-Soccer-Players/2.png',
-    './project-images/Analysis-of-Factors-Influencing-Finishing-Ability-in-Soccer-Players/3.png'
+    import.meta.env.BASE_URL + 'project-images/Analysis-of-Factors-Influencing-Finishing-Ability-in-Soccer-Players/1.png',
+    import.meta.env.BASE_URL + 'project-images/Analysis-of-Factors-Influencing-Finishing-Ability-in-Soccer-Players/2.png',
+    import.meta.env.BASE_URL + 'project-images/Analysis-of-Factors-Influencing-Finishing-Ability-in-Soccer-Players/3.png'
   ],
   nyc: [
-    './project-images/Analysis-of-Property-Rental-Prices-and-Number-of-Reviews-in-the-NYC-in-2023/1.png',
-    './project-images/Analysis-of-Property-Rental-Prices-and-Number-of-Reviews-in-the-NYC-in-2023/2.png',
-    './project-images/Analysis-of-Property-Rental-Prices-and-Number-of-Reviews-in-the-NYC-in-2023/3.png'
-    
+    import.meta.env.BASE_URL + 'project-images/Analysis-of-Property-Rental-Prices-and-Number-of-Reviews-in-the-NYC-in-2023/1.png',
+    import.meta.env.BASE_URL + 'project-images/Analysis-of-Property-Rental-Prices-and-Number-of-Reviews-in-the-NYC-in-2023/2.png',
+    import.meta.env.BASE_URL + 'project-images/Analysis-of-Property-Rental-Prices-and-Number-of-Reviews-in-the-NYC-in-2023/3.png'
   ],
   resume: [
-    './project-images/resume-optimizer/interface.png',
-    './project-images/resume-optimizer/optimization-results.png',
-    './project-images/resume-optimizer/ai-suggestions.png'
+    import.meta.env.BASE_URL + 'project-images/resume-optimizer/interface.png',
+    import.meta.env.BASE_URL + 'project-images/resume-optimizer/optimization-results.png',
+    import.meta.env.BASE_URL + 'project-images/resume-optimizer/ai-suggestions.png'
   ]
 };
 
@@ -174,7 +173,7 @@ const changeImage = (project, direction) => {
 
     <ul class="flex space-x-4 sm:mt-0">
       <li>
-        <a href="https://github.com/yourusername/resume-optimizer" 
+        <a href="https://github.com/tangiraiC/resume-optimizer" 
            target="_blank"
            rel="noopener noreferrer"
            class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
@@ -184,7 +183,7 @@ const changeImage = (project, direction) => {
         </a>
       </li>
       <li>
-        <a href="https://resume-optimizer-demo.herokuapp.com" 
+        <a href="https://resume-optimizer-h6ap.onrender.com/" 
            target="_blank"
            rel="noopener noreferrer"
            class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
