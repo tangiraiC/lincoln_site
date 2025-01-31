@@ -196,7 +196,7 @@ const changeImage = (project, direction) => {
   </div>
 </div>
         <!-- FIFA Wage Analysis Project -->
-        [Next project card - would you like me to continue with the FIFA project card?]
+        
 
         <!-- FIFA Wage Analysis Project -->
         <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
