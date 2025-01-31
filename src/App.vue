@@ -1,21 +1,15 @@
 <script setup>
-import About from './components/About.vue';
-import Footer from './components/Footer.vue';
-import HeroSection from './components/HeroSection.vue';
 import Navbar from './components/Navbar.vue';
-import Skills from './components/Skills.vue';
-import ProjectCard from './components/ProjectCard.vue';
+import Footer from './components/Footer.vue';
 </script>
 
-<template >
+<template>
   <div class="bg-white dark:bg-indigo-500">
-    <Navbar/>
-    <HeroSection/>
-    <Skills/>
-    <ProjectCard/>
-    <About/>
-    <Footer/>
+    <Navbar />
+    <!-- This is where your routed components will render -->
+    <router-view v-slot="{ Component }">
+      <component :is="Component" />
+    </router-view>
+    <Footer />
   </div>
 </template>
-
-
