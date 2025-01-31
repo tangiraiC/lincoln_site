@@ -1,13 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory(import.meta.env.BASE_URL),  // Add this to match Vite base config
   routes: [
-    { 
-      path: '/', 
+    {
+      path: '/',
       component: () => import('../components/Home.vue'),
-      // If you want your home page to show HeroSection, Skills, etc.
-      children: [] 
     },
     { path: '/skills', component: () => import('../components/Skills.vue') },
     { path: '/projects', component: () => import('../components/ProjectCard.vue') },
